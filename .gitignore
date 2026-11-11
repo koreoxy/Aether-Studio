@@ -1,7 +1,116 @@
-node_modules
-dist
-.DS_Store
-.env
 
-# Ignore the output video from Git but not videos you import into src/.
-out
+# ==========================================
+# DEPENDENCIES
+# ==========================================
+node_modules/
+.pnp/
+.pnp.cjs
+
+# ==========================================
+# REMOTION
+# ==========================================
+out/
+renders/
+rendered/
+*.mp4
+*.mov
+*.webm
+*.gif
+
+# Remotion cache
+.remotion/
+.cache/
+.cache-remotion/
+
+# ==========================================
+# BUILD OUTPUT
+# ==========================================
+build/
+dist/
+.next/
+coverage/
+
+# ==========================================
+# TYPESCRIPT
+# ==========================================
+*.tsbuildinfo
+
+# ==========================================
+# ENVIRONMENT VARIABLES
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.template
+
+# ==========================================
+# LOGS
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# EDITORS & IDE
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ==========================================
+# ESLINT & PRETTIER
+# ==========================================
+.eslintcache
+.prettier-cache
+
+# ==========================================
+# PACKAGE MANAGERS
+# ==========================================
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ==========================================
+# WHISPER CPP
+# ==========================================
+whisper.cpp/
+whisper-models/
+whisper-input
+
+
+# ==========================================
+# PUBLIC ASSETS
+# ==========================================
+
+# Ignore semua isi public/assets
+public/assets/*
+
+# Tetap upload tiga folder berikut
+!public/assets/audio-sound-effect/
+!public/assets/fonts/
+!public/assets/video-reference/
