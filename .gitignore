@@ -110,7 +110,12 @@ whisper-input
 # Ignore semua isi public/assets
 public/assets/*
 
-# Tetap upload tiga folder berikut
+# Allow selected directories
 !public/assets/audio-sound-effect/
 !public/assets/fonts/
 !public/assets/video-reference/
+
+# Allow all files and subdirectories inside them
+!public/assets/audio-sound-effect/**
+!public/assets/fonts/**
+!public/assets/video-reference/**
